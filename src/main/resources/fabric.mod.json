@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "morethanjusttechnical",
+	"version": "${version}",
+	"name": "MoreThanJustTechnical",
+	"description": "this is More than just Technical a mod that add small technical fetcher like more red stone types more slimes and slime block and copper pipes and copper wire and a lot more",
+	"authors": [
+		"Cuddlebunny1996"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/morethanjusttechnical/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.cuddlebunny.morethanjusttechnical.MoreThanJustTechnical"
+		],
+		"client": [
+			"net.cuddlebunny.morethanjusttechnical.MoreThanJustTechnicalClient"
+		],
+		"fabric-datagen": [
+			"net.cuddlebunny.morethanjusttechnical.MoreThanJustTechnicalDataGenerator"
+		]
+	},
+	"mixins": [
+		"morethanjusttechnical.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
