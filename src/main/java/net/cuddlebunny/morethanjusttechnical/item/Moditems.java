@@ -12,9 +12,11 @@ import net.minecraft.util.Identifier;
 
 public class Moditems {
     public static final Item Red_Slime_Balls = registerItem("red_slime_balls", new Item(new Item.Settings()));
+    public static final Item Blue_Slime_Balls = registerItem("blue_slime_balls", new Item(new Item.Settings()));
 
     private static  void addItemsToIngredientItemGroup(FabricItemGroupEntries entries){
         entries.add(Red_Slime_Balls);
+        entries.add(Blue_Slime_Balls);
     }
 
     private static Item registerItem(String name, Item item){
